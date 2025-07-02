@@ -12,13 +12,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class=" flex justify-center">
+    <main class="flex justify-center">
       <div class="mockup-phone">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-1">Hi.</div>
+          <div class="artboard artboard-demo phone-2">
+
+
+            <!-- Login form Starts.. -->
+            <div class="hero bg-base-200 min-h-screen">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+               
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Phone Number</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Password or Pin</span>
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Your Pin"
+                        class="input input-bordered"
+                        required
+                      />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover"
+                          >Forgot password?</a
+                        >
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="button-login" class="btn btn-primary">Login</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Login form Ends.... -->
+          </div>
         </div>
       </div>
     </main>
+
+
+    <script src="JS/login.js"></script>
   </body>
 </html>
