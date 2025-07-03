@@ -18,8 +18,10 @@
 
                         console.log(phoneNumber , pinNumber)
 
+                        // This way of verification is Not recommended...
+
                         if ( phoneNumber === '01741' && pinNumber === '1234'){
-                            // window.location.href= ""
+                            window.location.href = '/home.html'
 
                             console.log('You are allowed to login...')
                         }
@@ -27,7 +29,6 @@
                            alert(" Your Phone number or Pin code doesn't match ")
                         }
 
-                        
 
      })
 
