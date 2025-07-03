@@ -12,12 +12,22 @@
                 // step 3: Get the phone number
 
                 const phoneNumber = document.getElementById('phone-number').value;
-                        // phoneNumber.value= '01741957554';
 
-                        console.log(phoneNumber)
-
+                const pinNumber = document.getElementById('pin-number').value;
 
 
+                        console.log(phoneNumber , pinNumber)
+
+                        if ( phoneNumber === '01741' && pinNumber === '1234'){
+                            // window.location.href= ""
+
+                            console.log('You are allowed to login...')
+                        }
+                        else {
+                           alert(" Your Phone number or Pin code doesn't match ")
+                        }
+
+                        
 
      })
 
