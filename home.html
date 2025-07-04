@@ -17,7 +17,9 @@
         <div class="camera"></div>
         <div class="display">
           <div class="artboard artboard-demo phone-2">
-            <!-- Stats starts here  -->
+
+
+            <!-- Account Balance form starts here  -->
             <div>
               <div class="stats shadow">
                 <div class="stat">
@@ -29,7 +31,7 @@
 
             <div class="divider"></div>
 
-            <!-- Stats Ends here  -->
+            <!-- Account Balance form Ends here  -->
 
             <!-- User action buttons starts here .... -->
             <div>
@@ -41,23 +43,28 @@
 
             <!-- Add money form  -->
 
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card bg-base-100 w-4/5 max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Email</span>
+                    <span class="label-text">Amount</span>
                   </label>
+                  
                   <input
+                  id="balance"
                     type="text"
-                    placeholder="Phone Number"
+                    placeholder="Amount"
                     class="input input-bordered"
                   />
                 </div>
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Password</span>
+                    <span class="label-text">Pin</span>
                   </label>
+
+
                   <input
+                  id="entered-pin"
                     type="password"
                     placeholder="Pin"
                     class="input input-bordered"
@@ -65,8 +72,10 @@
                   />
                   
                 </div>
+
+
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                 </div>
               </form>
             </div>
@@ -77,5 +86,6 @@
         </div>
       </div>
     </main>
+    <script src="JS/home.js"></script>
   </body>
 </html>
