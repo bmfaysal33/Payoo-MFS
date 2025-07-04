@@ -9,22 +9,18 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 
     const enteredBalance = document.getElementById('balance').value;
     const enteredPin = document.getElementById('entered-pin').value;
+    const accountBalance = document.getElementById('account-balance').innerText;
 
-
-
-    console.log(enteredBalance, enteredPin)
-
+    
+    // obsolete way to validate pin...
+    
     if (enteredPin === '1234') {
-        // console.log('New Balance Added');
+        // Adding the value...
 
-        // Step- 1: get the value...
+        const newBalance =  parseFloat (accountBalance) + parseFloat(enteredBalance) ;
+        console.log(newBalance);
 
-
-      const digitBalance = parseFloat('enteredBalance');
-
-        // step - 2: add the balance
-        // step 3: show the balance
-
+ document.getElementById('account-balance').innerText = newBalance;
 
     }
     else {
