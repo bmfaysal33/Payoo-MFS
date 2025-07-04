@@ -21,7 +21,7 @@
                         // This way of verification is Not recommended...
 
                         if ( phoneNumber === '01741' && pinNumber === '1234'){
-                            window.location.href = '/home.html'
+                            window.location.href = 'home.html'
 
                             console.log('You are allowed to login...')
                         }
