@@ -11,16 +11,26 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     const enteredPin = document.getElementById('entered-pin').value;
     const accountBalance = document.getElementById('account-balance').innerText;
 
-    
+
     // obsolete way to validate pin...
-    
+
     if (enteredPin === '1234') {
+
         // Adding the value...
 
-        const newBalance =  parseFloat (accountBalance) + parseFloat(enteredBalance) ;
+        const newBalance = parseFloat(accountBalance) + parseFloat(enteredBalance);
         console.log(newBalance);
+        
+        document.getElementById('account-balance').innerText = newBalance;
+        
+        
+        const cashoutBalance = parseFloat(accountBalance) - parseFloat(enteredBalance);
 
- document.getElementById('account-balance').innerText = newBalance;
+        console.log(cashoutBalance);
+
+        document.getElementById('account-balance').innerText = cashoutBalance;
+
+
 
     }
     else {
