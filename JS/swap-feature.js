@@ -1,6 +1,6 @@
 
 
-        // Add Money Form....
+        // Show Add Money Form and Hide Cash out form....
 
 document.getElementById('btn-add-money-form').addEventListener('click', function(){
 
@@ -15,7 +15,7 @@ document.getElementById('btn-add-money-form').addEventListener('click', function
 
 
 
-                        // Cash Out Form....                  
+                        // show Cash Out Form and Hide Add money form ...                  
 
 document.getElementById('btn-cash-out-form').addEventListener('click', function(){
 
