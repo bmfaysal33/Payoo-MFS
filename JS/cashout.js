@@ -14,4 +14,8 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
 
         document.getElementById('account-balance').innerText = cashoutBalance;
     }
+
+    else{
+        alert('Failed to cash out, Please try again...')
+    }
 })
