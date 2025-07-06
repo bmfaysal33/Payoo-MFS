@@ -23,14 +23,6 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         
         document.getElementById('account-balance').innerText = newBalance;
         
-        
-        const cashoutBalance = parseFloat(accountBalance) - parseFloat(enteredBalance);
-
-        console.log(cashoutBalance);
-
-        document.getElementById('account-balance').innerText = cashoutBalance;
-
-
 
     }
     else {
