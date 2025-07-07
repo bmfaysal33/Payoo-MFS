@@ -20,6 +20,11 @@
 
                         // This way of verification is Not recommended...
 
+                        if (phoneNumber === '' && pinNumber === ''){
+                           alert('Please input phone and pin number')
+                        }
+                         else{
+
                         if ( phoneNumber === '01741' && pinNumber === '1234'){
                             window.location.href = 'home.html'
 
@@ -27,9 +32,10 @@
                         }
                         else {
                            alert(" Your Phone number or Pin code doesn't match ")
-                        }
+                        } 
+                     }
 
-
+ 
      })
 
 
