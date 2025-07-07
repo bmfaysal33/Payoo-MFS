@@ -13,6 +13,7 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
         console.log(cashoutBalance);
 
         document.getElementById('account-balance').innerText = cashoutBalance;
+        
     }
 
     else{
