@@ -23,6 +23,15 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         
         document.getElementById('account-balance').innerText = newBalance;
         
+      // Shows animation, when balance deducted...
+
+        const accountBalanceDiv = document.getElementById('acc-status');
+        accountBalanceDiv.style.transition = 'background-color 0.25s';
+        accountBalanceDiv.style.backgroundColor = '#37bf5c';
+        setTimeout(() => {
+            accountBalanceDiv.style.backgroundColor = '';
+        }, 300);
+
 
     }
     else {
