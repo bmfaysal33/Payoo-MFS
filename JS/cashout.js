@@ -17,8 +17,11 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
                 // Shows animation, when balance deducted...
 
         const accountBalanceDiv = document.getElementById('acc-status');
+
         accountBalanceDiv.style.transition = 'background-color 0.25s';
+
         accountBalanceDiv.style.backgroundColor = 'red';
+        
         setTimeout(() => {
             accountBalanceDiv.style.backgroundColor = '';
         }, 300);

@@ -11,12 +11,16 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
+
+
   <body>
     <main class="flex justify-center">
       <div class="mockup-phone">
-        <div class="camera"></div>
-        <div class="display">
+        <div class="camera "></div>
+        <div class="display ">
           <div class="artboard artboard-demo phone-2">
+
             <!-- Account Balance form starts here  -->
             <div>
               <div id="acc-status" class="stats shadow">
@@ -33,10 +37,11 @@
 
 
             <!-- User action buttons starts here .... -->
-            <div>
-              <button id="btn-add-money-form" class="btn btn-lg bg-green-400">Add Money</button>
-              <button id="btn-cash-out-form" class="btn btn-lg bg-red-400">Cashout</button>
+            <div class="flex justify-center gap-8">
+              <button id="btn-add-money-form" class="btn btn-lg bg-green-400 border-none">Add Money</button>
+              <button id="btn-cash-out-form" class="btn btn-lg bg-red-400 border-none">Cashout</button>
             </div>
+            <button id="btn-transaction-form" class="btn btn-lg  border-none mt-2">Transaction</button>
 
             <div class="divider"></div>
 
@@ -111,7 +116,7 @@
                 </div>
 
                 <div class="form-control mt-6">
-                  <button id="btn-cash-out" class="btn btn-primary bg-red-500 border-none text-black hover:bg-red-500">
+                  <button id="btn-cash-out" class="btn btn-primary  bg-red-500 border-none text-black hover:bg-red-500">
                     Cash Out
                   </button>
 
@@ -119,7 +124,15 @@
               </form>
             </div>
                 
-                <!-- Cashout Form Starts Here  -->
+                <!-- Cashout Form Ends Here  -->
+
+                <!-- Transaction History Form  -->
+
+                <div id="transaction" class="hidden">
+                  <h1>Transaction History</h1>
+                </div>
+
+
 
           </div>
         </div>
