@@ -17,13 +17,15 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
 
 
         // show Cashout transaction history
-
+        // const scroll = document.getElementById('transaction-info');
         const div = document.createElement('div');
         div.classList.add('bg-red-500', 'rounded-xl', 'p-4', 'my-2');
         div.innerHTML = `   <h1 class = "text-2xl font-bold"> Cash Out </h1>
                             <p> Deducted: ${cashoutAmount} tk, New balance: ${cashoutBalance} </p> `
 
         document.getElementById('transaction-info').appendChild(div);
+
+        // scroll.scrollTop = scroll.scrollHeight;
 
 
         // Shows animation, when balance deducted...
