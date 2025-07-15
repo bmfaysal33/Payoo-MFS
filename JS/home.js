@@ -25,11 +25,12 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 
         // transaction Add money history 
 
-        const info = document.createElement('p');
-        info.innerText = `Added : ${enteredBalance} tk, New balance: ${newBalance}`
-        console.log(info);
+        const div = document.createElement('div');
+        div.classList.add('bg-green-500', 'rounded-xl', 'p-4', 'my-2');
+        div.innerText = `Added : ${enteredBalance} tk, New balance: ${newBalance}`
+        console.log(div);
 
-        document.getElementById('transaction-addmoney').appendChild(info);
+        document.getElementById('transaction-info').appendChild(div);
 
 
         // Shows animation, when balance changes...

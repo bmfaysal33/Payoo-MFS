@@ -19,11 +19,11 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
         // show Cashout transaction history
 
         const div = document.createElement('div');
-        // div.classList.add('bg-red-500')
-        div.innerHTML = ` <div class="my-2">  <h1 class = "text-2xl font-bold"> Cash Out </h1>
-                            <p> Deducted: ${cashoutAmount} tk, New balance: ${cashoutBalance} </p> </div> `
+        div.classList.add('bg-red-500', 'rounded-xl', 'p-4', 'my-2');
+        div.innerHTML = `   <h1 class = "text-2xl font-bold"> Cash Out </h1>
+                            <p> Deducted: ${cashoutAmount} tk, New balance: ${cashoutBalance} </p> `
 
-        document.getElementById('transaction-cashout').appendChild(div);
+        document.getElementById('transaction-info').appendChild(div);
 
 
         // Shows animation, when balance deducted...

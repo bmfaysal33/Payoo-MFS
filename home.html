@@ -15,11 +15,11 @@
 
 
   <body>
-    <main class="flex justify-center">
+    <main class="flex justify-center ">
       <div class="mockup-phone">
         <div class="camera "></div>
         <div class="display ">
-          <div class="artboard artboard-demo phone-2">
+          <div class="artboard artboard-demo phone-2 w-full mx-auto max-w-md">
 
             <!-- Account Balance form starts here  -->
             <div>
@@ -45,10 +45,14 @@
 
             <div class="divider"></div>
 
-            <!-- Add money form  -->
 
-            <div id="add-money-form" class=" card bg-base-100 w-4/5 max-w-sm shrink-0 shadow-2xl">
-              <form class="card-body">
+
+            <!-- All the forms are here, Add money, Cashout , Transaction history  -->
+
+            <!-- <section class=" w-full border border-black "> -->
+            <!-- Add money form  -->
+            <div id="add-money-form" class="card bg-base-100 shrink-0 shadow-2xl flex justify-center">
+              <form class="card-body w-full">
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Amount</span>
@@ -82,12 +86,10 @@
                 </div>
               </form>
             </div>
-
             <!-- Add money form ends  -->
 
-                <!-- Cashout Form Starts Here  -->
-                
-                <div id="cash-out-form" class="hidden card bg-base-100 w-4/5 max-w-sm shrink-0 shadow-2xl">
+                <!-- Cashout Form Starts Here  -->   
+                <div id="cash-out-form" class="hidden card bg-base-100 w-4/5  shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -122,19 +124,18 @@
 
                 </div>
               </form>
-            </div>
-                
+            </div>   
                 <!-- Cashout Form Ends Here  -->
 
-                <!-- Transaction History Form  -->
 
-                <div id="transaction" class="hidden">
+                <!-- Transaction History Form  -->
+                <div id="transaction" class="hidden shrink-0 mx-auto">
                   <h1 class="text-3xl">Transaction History</h1>
-                  <div id="transaction-addmoney" class="bg-green-500 rounded-xl p-4 my-2"></div>
-                  <div id="transaction-cashout" class="bg-red-500 rounded-xl p-4 my-2"></div>
+                  <div id="transaction-info" class=" "></div>
+                 
                 </div>
 
-
+  <!-- </section> -->
 
           </div>
         </div>
