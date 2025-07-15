@@ -20,10 +20,19 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
 
         const newBalance = parseFloat(accountBalance) + parseFloat(enteredBalance);
         console.log(newBalance);
-        
+
         document.getElementById('account-balance').innerText = newBalance;
-        
-      // Shows animation, when balance deducted...
+
+        // transaction Add money history 
+
+        const info = document.createElement('p');
+        info.innerText = `Added : ${enteredBalance} tk, New balance: ${newBalance}`
+        console.log(info);
+
+        document.getElementById('transaction-addmoney').appendChild(info);
+
+
+        // Shows animation, when balance changes...
 
         const accountBalanceDiv = document.getElementById('acc-status');
         accountBalanceDiv.style.transition = 'background-color 0.25s';

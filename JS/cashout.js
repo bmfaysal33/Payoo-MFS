@@ -14,21 +14,33 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
 
         document.getElementById('account-balance').innerText = cashoutBalance;
 
-                // Shows animation, when balance deducted...
+
+
+        // show Cashout transaction history
+
+        const div = document.createElement('div');
+        // div.classList.add('bg-red-500')
+        div.innerHTML = ` <div class="my-2">  <h1 class = "text-2xl font-bold"> Cash Out </h1>
+                            <p> Deducted: ${cashoutAmount} tk, New balance: ${cashoutBalance} </p> </div> `
+
+        document.getElementById('transaction-cashout').appendChild(div);
+
+
+        // Shows animation, when balance deducted...
 
         const accountBalanceDiv = document.getElementById('acc-status');
 
         accountBalanceDiv.style.transition = 'background-color 0.25s';
 
         accountBalanceDiv.style.backgroundColor = 'red';
-        
+
         setTimeout(() => {
             accountBalanceDiv.style.backgroundColor = '';
         }, 300);
 
     }
 
-    else{
+    else {
         alert('Failed to cash out, Please try again...')
     }
 })
